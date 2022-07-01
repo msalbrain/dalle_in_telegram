@@ -16,11 +16,11 @@ dp = Dispatcher(bot)
 async def starter(msg: types.Message):
     check_user = find_user_chat_id(int(msg.chat.id))
     if check_user:
-        await msg.answer("dalle mini on telegram, the best meme generator. Send in your image desc as such\n /image cat swimming\n please be responsible with what you type other people will see what you request for.\n the code is available at https://github.com/caruesystem/dalle_in_telegram.git", disable_web_page_preview=True)
+        await msg.answer("dalle mini on telegram, the best meme generator. Send in your image desc as such\n /image cat swimming\n please be responsible with what you type other people will see what you request for.\n the code is available at https://github.com/msalbrain/dalle_in_telegram.git", disable_web_page_preview=True)
     else:
         A = User(chat_id=msg.chat.id,name=msg.chat.full_name)
         insert_user(A)
-        await msg.answer("dalle mini on telegram, the best meme generator. Send in your image desc as such\n /image cat swimming\n please be responsible with what you type other people will see what you request for.\n the code is available at https://github.com/caruesystem/dalle_in_telegram.git", disable_web_page_preview=True)
+        await msg.answer("dalle mini on telegram, the best meme generator. Send in your image desc as such\n /image cat swimming\n please be responsible with what you type other people will see what you request for.\n the code is available at https://github.com/msalbrain/dalle_in_telegram.git", disable_web_page_preview=True)
 
 def rnd_num(num, user_num):
     num1 = randint(1, num)
